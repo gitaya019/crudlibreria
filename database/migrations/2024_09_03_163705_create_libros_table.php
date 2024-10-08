@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('pais');
-            $table->string('mail');
             $table->foreignId('editorials_id')
             ->constrained('editorials')
             ->cascadeOnUpdate()
